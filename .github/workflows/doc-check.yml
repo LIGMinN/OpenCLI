@@ -1,9 +1,7 @@
 name: Doc Check
 
 on:
-  pull_request:
-    branches: [main, dev]
-
+  workflow_dispatch:
 concurrency:
   group: doc-check-${{ github.ref }}
   cancel-in-progress: true
