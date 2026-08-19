@@ -1,18 +1,7 @@
 name: Build Chrome Extension
 
 on:
-  push:
-    branches: [ "main" ]
-    tags: [ "ext-v*" ]
-    paths:
-      - 'extension/**'
-      - '.github/workflows/build-extension.yml'
-  pull_request:
-    branches: [ "main" ]
-    paths:
-      - 'extension/**'
-      - '.github/workflows/build-extension.yml'
-
+  workflow_dispatch:
 permissions:
   contents: write
 
