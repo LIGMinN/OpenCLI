@@ -1,10 +1,7 @@
 name: Trigger Website Rebuild (Docs Updated)
 
 on:
-  push:
-    branches: [main]
-    paths: ['docs/**']
-
+  workflow_dispatch:
 jobs:
   dispatch:
     runs-on: ubuntu-latest
